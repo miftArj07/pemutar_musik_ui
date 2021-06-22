@@ -11,12 +11,13 @@ class AlbumArt extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Image.asset('images/img.png'),
       decoration: BoxDecoration(color: primaryColor,
+      borderRadius: BorderRadius.circular(20),
       boxShadow: [
          BoxShadow(
-            color: darkPrimaryColor.withOpacity(0.5),
-            offset: Offset(5, 10),
+            color: darkPrimaryColor,
+            offset: Offset(20, 8),
             spreadRadius: 3,
-            blurRadius: 10),
+            blurRadius: 25),
         BoxShadow(
             color: Colors.white,
             offset: Offset(-3, -4),
