@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pemutar_musik_ui/albumart.dart';
 import 'package:pemutar_musik_ui/navbar.dart';
+import 'package:pemutar_musik_ui/playerControls.dart';
 import 'colors.dart';
 
 void main() {
@@ -60,8 +61,10 @@ class _HomePageState extends State<HomePage> {
               },
               min: 0,
               max: 20,
+
             ),
-          )
+          ),
+          PlayControl()
         ]));
   }
 }
