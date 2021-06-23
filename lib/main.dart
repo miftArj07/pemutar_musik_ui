@@ -24,7 +24,9 @@ class _HomePageState extends State<HomePage> {
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
         backgroundColor: primaryColor,
-        body: Column(children: <Widget>[
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
           NavigationBar(),
           Container(
             height: height / 2.5,
@@ -64,7 +66,7 @@ class _HomePageState extends State<HomePage> {
 
             ),
           ),
-          PlayControl()
+          PlayerControls()
         ]));
   }
 }
